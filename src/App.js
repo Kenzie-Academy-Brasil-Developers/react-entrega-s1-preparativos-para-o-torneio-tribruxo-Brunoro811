@@ -9,7 +9,7 @@ function App() {
   const [showFirst, setShowFirst] = useState(true);
   const [showSecound, setShowSecound] = useState(true);
   useEffect(() => {
-    fetch("http://hp-api.herokuapp.com/api/characters/students")
+    fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((response) => response.json())
       .then((response) => {
         setCharacters(response);
