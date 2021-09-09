@@ -8,7 +8,7 @@ function Main({ characters }) {
   const [ravenclawHufflepuff, setRavenclawHufflepuff] = useState([]);
   const [status, setStatus] = useState(false);
 
-  const filtrar = () => {
+  useEffect(() => {
     setGryffindor(characters.filter((item) => item.house === "Gryffindor"));
     setSlytherin(characters.filter((item) => item.house === "Slytherin"));
     setRavenclawHufflepuff(
@@ -17,11 +17,7 @@ function Main({ characters }) {
       )
     );
     setStatus(true);
-  };
-  useEffect(() => {
-    filtrar();
   }, []);
-  useEffect(() => () => {}, []);
   return (
     <main className="Main">
       {status && (
