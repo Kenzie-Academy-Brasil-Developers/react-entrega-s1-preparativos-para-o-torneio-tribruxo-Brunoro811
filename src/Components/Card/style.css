@@ -1,0 +1,17 @@
+.item {
+  animation: FadeIn 1s linear;
+}
+.item img {
+  max-width: 200px;
+  max-height: 200px;
+}
+@keyframes FadeIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
