@@ -15,7 +15,7 @@ function App() {
         setCharacters(response);
       })
       .catch((error) => console.dir(error));
-  }, [characters]);
+  }, []);
 
   const HandlePlay = () => {
     setShowFirst(!showFirst);

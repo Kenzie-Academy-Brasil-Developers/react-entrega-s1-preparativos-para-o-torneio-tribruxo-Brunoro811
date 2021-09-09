@@ -17,7 +17,7 @@ function Main({ characters }) {
       )
     );
     setStatus(true);
-  }, []);
+  }, [characters]);
   return (
     <main className="Main">
       {status && (
