@@ -5,6 +5,7 @@
   max-width: 200px;
   border-radius: 3px;
   font-weight: bold;
+  cursor: pointer;
 }
 .Button--Primary {
   color: #ffffff;
